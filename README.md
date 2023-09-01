@@ -1,54 +1,27 @@
-👨‍🎓 Estudando: python, mysql.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
 
-💬 Atualmente não estou trabalhando.
+</head>
+<body>
+    <h1>👨‍🎓 Estudando: Sistemas De Informação 3º ano</h1>
+    <h3>💬 Atualmente não estou trabalhando.</h3>
+    <h3>✉️ Contate-me no email: <a href="mailto:pauloviniciusyt974@gmail.com">pauloviniciusyt974@gmail.com</a></h3>
+    <h3>😁 Pronouns: ele/dele.</h3>
+</body>
+</html>
 
-✉️ contate-me no email: pauloviniciusyt974@gmail.com
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <img src="https://github-readme-stats.vercel.app/api?username=PauloViniciusDaSilva&show_icons=true&theme=tokyonight" width="707" height="auto" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PauloViniciusDaSilva&layout=pie&theme=tokyonight" width="" height="auto" />
+</div>
+</br>
+</br>
 
-😁 Pronouns: ele/dele.
+[![Blog](https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white)](www.linkedin.com/in/paulo-vinicius-da-silva-14198a257)
+[![Blog](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)](https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-)
+[![Blog](https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=MySQL&logoColor=white)](https://www.cursoemvideo.com/curso/mysql/)
+[![Blog](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)](https://www.cursoemvideo.com/curso/curso-de-git-e-github/)
+[![Blog](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)]()
 
-
-<div id="byte_freq"></div>
-<script>
-  var language_bytes = <%= language_byte_count %>
-  var childrenFunction = function(d){return d.elements};
-  var sizeFunction = function(d){return d.count;};
-  var colorFunction = function(d){return Math.floor(Math.random()*20)};
-  var nameFunction = function(d){return d.name;};
-
-  var color = d3.scale.linear()
-              .domain([0,10,15,20])
-              .range(["grey","green","yellow","red"]);
-
-  drawTreemap(5000, 2000, '#byte_freq', language_bytes, childrenFunction, nameFunction, sizeFunction, colorFunction, color);
-
-  function drawTreemap(height,width,elementSelector,language_bytes,childrenFunction,nameFunction,sizeFunction,colorFunction,colorScale){
-
-      var treemap = d3.layout.treemap()
-          .children(childrenFunction)
-          .size([width,height])
-          .value(sizeFunction);
-
-      var div = d3.select(elementSelector)
-          .append("div")
-          .style("position","relative")
-          .style("width",width + "px")
-          .style("height",height + "px");
-
-      div.data(language_bytes).selectAll("div")
-          .data(function(d){return treemap.nodes(d);})
-          .enter()
-          .append("div")
-          .attr("class","cell")
-          .style("background",function(d){ return colorScale(colorFunction(d));})
-          .call(cell)
-          .text(nameFunction);
-  }
-
-  function cell(){
-      this
-          .style("left",function(d){return d.x + "px";})
-          .style("top",function(d){return d.y + "px";})
-          .style("width",function(d){return d.dx - 1 + "px";})
-          .style("height",function(d){return d.dy - 1 + "px";});
-  }
-</script>
+Apaixonado por tecnologia e sempre buscando cada vez mais me aperfeiçoar
